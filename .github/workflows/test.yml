@@ -22,3 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Your Job is done now Thanks
+        run: echo 'Hi ${{ env.MY_NAME }}'
+        env: 
+          MY_NAME: MY_NAME
